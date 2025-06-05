@@ -15,6 +15,8 @@ namespace School_API
             CreateMap<Attendance, AttendanceDto>().ReverseMap();
             CreateMap<Attendance, AttendanceCreateDto>().ReverseMap();
             CreateMap<Attendance, AttendanceUpdateDto>().ReverseMap();
+
+            CreateMap<User, RegisterUserDto>().ReverseMap();
         }
     }
 }

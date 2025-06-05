@@ -8,9 +8,9 @@ namespace School_API.Data
         public SchoolContext(DbContextOptions<SchoolContext> options) :
             base(options)
         {
-             
+            
         }
-
+        public DbSet<User> Users { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
     }
