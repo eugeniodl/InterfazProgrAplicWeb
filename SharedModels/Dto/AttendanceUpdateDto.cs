@@ -1,10 +1,14 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace School_API.Dto
+namespace SharedModels.Dto
 {
-    public class AttendanceCreateDto
+    public class AttendanceUpdateDto
     {
-        [Required(ErrorMessage = "El campo StudentId es obligatorio.")]
+        [Required(ErrorMessage = "El AttendanceId es obligatorio.")]
+        [Range(1, int.MaxValue, ErrorMessage = "El AttendanceId debe ser mayor que cero.")]
+        public int AttendanceId { get; set; }
+
+        [Required(ErrorMessage = "El StudentId es obligatorio.")]
         [Range(1, int.MaxValue, ErrorMessage = "El StudentId debe ser mayor que cero.")]
         public int StudentId { get; set; }
 

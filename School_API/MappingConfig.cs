@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using School_API.Dto;
+using SharedModels.Dto;
 using SharedModels;
 
 namespace School_API

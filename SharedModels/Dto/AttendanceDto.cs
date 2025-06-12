@@ -1,4 +1,4 @@
-﻿namespace School_API.Dto
+﻿namespace SharedModels.Dto
 {
     public class AttendanceDto
     {

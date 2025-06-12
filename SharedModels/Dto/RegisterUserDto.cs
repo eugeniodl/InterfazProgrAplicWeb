@@ -5,13 +5,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace School_API.Dto
+namespace SharedModels.Dto
 {
-    public class LoginUserDto
+    public class RegisterUserDto
     {
         [Required]
         public string UserName { get; set; }
         [Required]
+        public string FirstName { get; set; }
+        [Required]
+        public string LastName { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+        [Required]
+        [MinLength(6)]
         public string Password { get; set; }
     }
 }

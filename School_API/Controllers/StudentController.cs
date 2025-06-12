@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using School_API.Dto;
+using SharedModels.Dto;
 using School_API.Filters;
 using School_API.Repository.IRepository;
 using SharedModels;
